@@ -1,4 +1,4 @@
-# Lightbox # Lightbox2
+# Lightbox2
 
 The _original_ lightbox script.
 
