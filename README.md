@@ -1,32 +1,12 @@
-# Lightbox2
+# Lightbox2 Site
 
-The _original_ lightbox script.
+The Lightbox2 site includes demos, usage instructions, and troubleshooting information. See it live at [lokeshdhakar.com/projects/lightbox2/](http://lokeshdhakar.com/projects/lightbox2/).
 
-Lightbox is small javascript library used to overlay images on top of the current page. It's a snap to setup and works on all modern browsers.
-
-- **Demos and usage instructions.** Visit the [Lightbox homepage](http://lokeshdhakar.com/projects/lightbox2/) to see examples, info on getting started, script options, how to get help, and more.
-- **Releases and Changelog**. Viewable on the [Github Releases page](https://github.com/lokesh/lightbox2/releases)
-- **Roadmap.** View the [Roadmap](https://github.com/lokesh/lightbox2/blob/master/ROADMAP.md) for a peek at what is being planned for future releases.
-- **License.** Lightbox is licensed under the MIT License. [Learn more about the license.](http://lokeshdhakar.com/projects/lightbox2/#license)
+The Lightbox2 script repository is located at [https://github.com/lokesh/lightbox2](https://github.com/lokesh/lightbox2).
 
 by [Lokesh Dhakar](http://www.lokeshdhakar.com)
 
----
+## Development
 
-## Info for Maintainers
-
-- **Issues and PRs requiring review.** See items tagged with [\[status\] needs review](https://github.com/lokesh/lightbox2/labels/%5Bstatus%5D%20needs%20review)
-- **Questions on Stackoverflow.** See Questions tagged with [lightbox2](https://stackoverflow.com/questions/tagged/lightbox2).
-- **Release instructions.** See [DEPLOY.md](https://github.com/lokesh/lightbox2/blob/master/DEPLOY.md).
-
-
-### Local development
-
-Some old tech, but it works, so no upgrading till something breaks.
-
-- Install [Bower](https://bower.io/) and [Grunt](https://gruntjs.com/): `npm install -g bower grunt`
-- Install jQuery dependency with Bower: `bower install`
-- Start local server: `grunt`
-- Navigate to `localhost:8000/examples`
-- Update `examples/index.html` to load jQuery and `src/js/lightbox.js`.
-
+- `npm run dev`: Spins up http-server
+- `npm run deploy`: Uses sftp to deploy to Dreamhost where it is served up from `lokeshdhakar.com/projects/lightbox2` folder.

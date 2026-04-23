@@ -1,40 +1,29 @@
 {
-  "name": "lightbox2",
-  "version": "2.11.4",
-  "author": "Lokesh Dhakar <lokesh.dhakar@gmail.com>",
-  "description": "The original Lightbox script. Uses jQuery.",
-  "keywords": [
-    "lightbox",
-    "lightbox2",
-    "overlay",
-    "gallery",
-    "slideshow",
-    "images"
-  ],
+  "name": "lightbox2-site",
+  "version": "1.1.0",
+  "author": "Lokesh Dhakar",
+  "description": "Lightbox2 site, which includes demos, usage instructions, and troubleshooting information. Lives at lokeshdhakar.com/projects/lightbox2/.",
   "homepage": "http://lokeshdhakar.com/projects/lightbox2/",
-  "main": "./dist/js/lightbox.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lokesh/lightbox2.git"
+    "url": "https://github.com/lokesh/lightbox2-site.git"
   },
-  "bugs": {
-    "url": "https://github.com/lokesh/lightbox2/issues"
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "ssh2-sftp-client": "^12.0.1"
   },
+  "private": true,
   "licenses": [
     {
-      "type": "MIT",
-      "url": "https://raw.githubusercontent.com/lokesh/lightbox2/master/LICENSE"
+      "type": "UNLICENSED"
     }
   ],
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-connect": "^0.7.1",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-contrib-cssmin": "^0.12.3",
-    "grunt-contrib-jshint": "^0.11.2",
-    "grunt-contrib-uglify": "~0.4.0",
-    "grunt-contrib-watch": "^0.5.3",
-    "grunt-jscs": "^1.8.0"
+  "scripts": {
+    "build": "mkdir -p vendor/lightbox2/css vendor/lightbox2/js vendor/lightbox2/images && cp node_modules/lightbox2/dist/css/lightbox.min.css vendor/lightbox2/css/ && cp node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js vendor/lightbox2/js/ && cp node_modules/lightbox2/dist/images/* vendor/lightbox2/images/",
+    "dev": "http-server",
+    "deploy": "node ./build/deploy.js"
+  },
+  "dependencies": {
+    "lightbox2": "^2.12.0"
   }
 }
