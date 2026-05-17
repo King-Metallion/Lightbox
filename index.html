@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>The Original Lightbox</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="https://thumbs2.imgbox.com/48/4a/njPoEQXN_t.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="https://thumbs2.imgbox.com/a7/0c/4kcX5bVf_t.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="https://thumbs2.imgbox.com/a8/cb/8vUY79rl_t.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="https://thumbs2.imgbox.com/44/d3/rxchmL1D_t.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="https://images2.imgbox.com/48/4a/njPoEQXN_o.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://images2.imgbox.com/a7/0c/4kcX5bVf_o.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="https://images2.imgbox.com/a8/cb/8vUY79rl_o.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="https://images2.imgbox.com/44/d3/rxchmL1D_o.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="https://thumbs2.imgbox.com/48/4a/njPoEQXN_t.png" onclick="currentSlide(1)" alt="March Of Time">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="https://thumbs2.imgbox.com/a7/0c/4kcX5bVf_t.png" onclick="currentSlide(2)" alt="The Dark Ride">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="https://thumbs2.imgbox.com/a8/cb/8vUY79rl_t.jpg" onclick="currentSlide(3)" alt="Music">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="https://thumbs2.imgbox.com/44/d3/rxchmL1D_t.jpg" onclick="currentSlide(4)" alt="Kia Rio">
+    </div>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
